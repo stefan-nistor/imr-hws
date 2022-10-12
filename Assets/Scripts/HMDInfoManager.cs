@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,8 @@ using UnityEngine.XR;
 
 public class HMDInfoManager : MonoBehaviour
 {
+
+    private int counter;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,9 +26,13 @@ public class HMDInfoManager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    // private void OnTriggerEnter(Collider collider)
+    // {
+    //     if (collider.gameObject.CompareTag("Target"))
+    //     {
+    //         counter++;
+    //         Console.WriteLine($"Target Hit! Count: {counter}");
+    //         
+    //     }
+    // }
 }
